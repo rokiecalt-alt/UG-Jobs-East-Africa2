@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="UG Jobs East Africa — find jobs and connect with employers across Uganda.">
+<title>UG Jobs East Africa | Find work. Hire talent.</title>
+<style>
+:root{--navy:#102a43;--green:#087f5b;--mint:#e8f5ef;--ink:#182b3a;--muted:#64748b;--line:#dce5eb;--bg:#f5f8fa;--white:#fff;--amber:#fff3cd;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:var(--navy);color:white;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:0;z-index:5}.brand{font-weight:850;font-size:1.15rem;letter-spacing:-.4px}.brand span{color:#65d6a5}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button{border:0;background:transparent;color:#e6eef4;padding:9px 11px;border-radius:9px}.nav button:hover,.nav button.active{background:#24445f}.wrap{max-width:1120px;margin:auto;padding:24px 18px}.hero{background:linear-gradient(120deg,#102a43,#145b50);color:white;border-radius:20px;padding:34px 28px;margin:10px 0 22px}.hero h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.08;margin:0 0 10px;max-width:650px}.hero p{color:#d8e8e6;margin:0 0 22px}.search{display:grid;grid-template-columns:2fr 1fr auto;gap:9px;background:white;padding:9px;border-radius:13px;max-width:850px}.search input,.search select{border:0;min-width:0;padding:10px;color:var(--ink);background:white}.btn{border:0;border-radius:10px;background:var(--green);color:white;font-weight:700;padding:11px 16px}.btn:hover{filter:brightness(.95)}.btn.secondary{background:#e8f0f5;color:var(--navy)}.btn.outline{background:white;border:1px solid var(--line);color:var(--ink)}.btn.danger{background:#b42318}.btn.small{padding:7px 10px;font-size:.88rem}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 25px}.stat,.panel,.job{background:white;border:1px solid var(--line);border-radius:14px;padding:16px}.stat strong{display:block;font-size:1.5rem;color:var(--green)}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0 12px}.section-head h2{margin:0;font-size:1.3rem}.jobs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.job h3{margin:0 0 6px}.company{font-weight:650}.meta{color:var(--muted);font-size:.9rem;display:flex;gap:9px;flex-wrap:wrap;margin:8px 0}.tag{display:inline-block;background:var(--mint);color:#086044;border-radius:99px;padding:4px 9px;font-size:.78rem;font-weight:700}.muted{color:var(--muted)}.empty{padding:25px;text-align:center;color:var(--muted);background:white;border:1px dashed var(--line);border-radius:12px}.hidden{display:none!important}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:650;font-size:.9rem}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #cbd5df;border-radius:9px;background:white}.field textarea{min-height:105px;resize:vertical}.panel h2,.panel h3{margin-top:0}.notice{background:var(--amber);padding:12px;border-radius:10px;color:#684d05;font-size:.9rem;margin:12px 0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.tabs button{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 12px}.tabs button.active{background:var(--navy);color:white}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.footer{background:var(--navy);color:#dbe7ef;text-align:center;padding:24px;margin-top:40px;font-size:.9rem}.smalltext{font-size:.82rem;color:var(--muted)}.admin-box{border:1px solid #e4c56b;background:#fffaf0;padding:12px;border-radius:10px;margin-bottom:12px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#152e40;color:white;padding:12px 18px;border-radius:10px;z-index:10;box-shadow:0 5px 24px #0002;max-width:90vw}
+@media(max-width:700px){.top{align-items:flex-start;flex-direction:column}.nav{width:100%}.nav button{padding:8px}.search{grid-template-columns:1fr}.search input,.search select{border-bottom:1px solid var(--line)}.stats{grid-template-columns:1fr 1fr}.jobs{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding:25px 18px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">UG <span>Jobs</span> East Africa</div>
+  <nav class="nav" aria-label="Main navigation">
+    <button class="active" data-page="home">Home</button><button data-page="jobs">Browse jobs</button><button data-page="post">Post a job</button><button data-page="register">Employer registration</button><button data-page="admin">Admin</button>
+  </nav>
+</header>
+<main class="wrap">
+<section id="home" class="page">
+  <div class="hero">
+    <h1>Find work. Hire talent. Build your future.</h1>
+    <p>Discover opportunities and connect with employers across Uganda.</p>
+    <form class="search" id="heroSearch"><input id="heroKeyword" placeholder="Job title, skill or company" aria-label="Job keyword"><select id="heroLocation" aria-label="Location"><option value="">All Uganda</option><option>Kampala</option><option>Wakiso</option><option>Entebbe</option><option>Jinja</option><option>Mbarara</option><option>Gulu</option><option>Mbale</option><option>Other</option></select><button class="btn">Search jobs</button></form>
+  </div>
+  <div class="stats"><div class="stat"><strong id="statJobs">0</strong><span class="muted">Open vacancies</span></div><div class="stat"><strong>All  Uganda</strong><span class="muted">Nationwide coverage</span></div><div class="stat"><strong>Free</strong><span class="muted">To post during launch</span></div></div>
+  <div class="section-head"><h2>Latest opportunities</h2><button class="btn secondary small" data-goto="jobs">View all jobs</button></div>
+  <div id="latestJobs" class="jobs"></div>
+  <div class="panel" style="margin-top:18px"><div class="row"><div><h2>Are you hiring?</h2><p class="muted">Register your organisation and publish a vacancy at no cost during our launch.</p></div><button class="btn" data-goto="register">Get started</button></div></div>
+</section>
+
+<section id="jobs" class="page hidden">
+  <div class="section-head"><h2>Browse jobs across Uganda</h2><span class="muted" id="jobCount"></span></div>
+  <div class="panel" style="margin-bottom:14px"><div class="form-grid">
+    <div class="field"><label for="filterKeyword">Keyword</label><input id="filterKeyword" placeholder="e.g. driver, accountant"></div>
+    <div class="field"><label for="filterLocation">Location</label><select id="filterLocation"><option value="">All Uganda</option><option>Kampala</option><option>Wakiso</option><option>Entebbe</option><option>Jinja</option><option>Mbarara</option><option>Gulu</option><option>Mbale</option><option>Other</option></select></div>
+    <div class="field"><label for="filterType">Employment type</label><select id="filterType"><option value="">Any type</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option><option>Temporary</option></select></div>
+    <div class="field"><label for="filterCategory">Category</label><select id="filterCategory"><option value="">All categories</option><option>Driving</option><option>Administration</option><option>Sales & Marketing</option><option>Education</option><option>Technology</option><option>Healthcare</option><option>Hospitality</option><option>Other</option></select></div>
+  </div></div>
+  <div id="allJobs" class="jobs"></div>
+</section>
+
+<section id="post" class="page hidden">
+ <div class="panel">
+  <h2>Post a job vacancy</h2><p class="muted">Job posts are free during the launch period. Listings are held for admin review before appearing publicly.</p>
+  <form id="jobForm" class="form-grid">
+   <div class="field"><label>Job title *</label><input name="title" required placeholder="e.g. Delivery Driver"></div>
+   <div class="field"><label>Company / organisation *</label><input name="company" required></div>
+   <div class="field"><label>Work location *</label><input name="location" required placeholder="e.g. Kampala"></div>
+   <div class="field"><label>Category *</label><select name="category" required><option value="">Choose category</option><option>Driving</option><option>Administration</option><option>Sales & Marketing</option><option>Education</option><option>Technology</option><option>Healthcare</option><option>Hospitality</option><option>Other</option></select></div>
+   <div class="field"><label>Employment type *</label><select name="type" required><option value="">Choose type</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option><option>Temporary</option></select></div>
+   <div class="field"><label>Salary / pay (optional)</label><input name="salary" placeholder="e.g. UGX 800,000 per month"></div>
+   <div class="field"><label>Application email *</label><input name="email" type="email" required></div>
+   <div class="field"><label>Application deadline</label><input name="deadline" type="date"></div>
+   <div class="field full"><label>Job description and requirements *</label><textarea name="description" required placeholder="Describe responsibilities, qualifications, experience and how to apply."></textarea></div>
+   <div class="field full"><label>Employer contact phone (optional)</label><input name="phone" type="tel" placeholder="+256..."></div>
+   <div class="field full"><button class="btn">Submit job for review</button><p class="smalltext">Only authorised employer representatives should submit vacancies. Never ask applicants to pay to apply.</p></div>
+  </form>
+ </div>
+</section>
+
+<section id="register" class="page hidden">
+ <div class="panel">
+  <h2>Employer registration</h2><p class="muted">Create an employer profile before submitting vacancies.</p>
+  <form id="employerForm" class="form-grid">
+   <div class="field"><label>Organisation / business name *</label><input name="name" required></div>
+   <div class="field"><label>Contact person's name *</label><input name="contact" required></div>
+   <div class="field"><label>Work email *</label><input name="email" type="email" required></div>
+   <div class="field"><label>Phone number *</label><input name="phone" type="tel" required></div>
+   <div class="field"><label>Location *</label><input name="location" required placeholder="District / town"></div>
+   <div class="field"><label>Website (optional)</label><input name="website" type="url" placeholder="https://"></div>
+   <div class="field full"><label>About the organisation *</label><textarea name="about" required></textarea></div>
+   <div class="field full"><button class="btn">Register employer</button></div>
+  </form>
+ </div>
+</section>
+
+<section id="apply" class="page hidden">
+ <div class="panel">
+  <button class="btn outline small" data-goto="jobs">← Back to jobs</button>
+  <h2 id="applyTitle">Apply for a job</h2><p id="applyCompany" class="muted"></p>
+  <form id="applyForm" class="form-grid">
+   <input type="hidden" name="jobId">
+   <div class="field"><label>Full name *</label><input name="name" required></div>
+   <div class="field"><label>Email address *</label><input name="email" type="email" required></div>
+   <div class="field"><label>Phone number *</label><input name="phone" type="tel" required></div>
+   <div class="field"><label>Attach CV (PDF, DOC or DOCX, max 3MB)</label><input name="cv" type="file" accept=".pdf,.doc,.docx"></div>
+   <div class="field full"><label>Short cover message *</label><textarea name="message" required placeholder="Briefly explain why you are suitable for this role."></textarea></div>
+   <div class="field full"><div class="notice">Demo privacy notice: your application and any attached CV are stored only in this browser on this device. This prototype does not securely transmit applications to employers.</div><label><input type="checkbox" required> I agree to share my application details with the employer for this vacancy.</label></div>
+   <div class="field full"><button class="btn">Submit application</button></div>
+  </form>
+ </div>
+</section>
+
+<section id="admin" class="page hidden">
+ <div class="panel">
+  <h2>Admin moderation</h2>
+  <div class="admin-box"><strong>Demo admin access</strong><p class="smalltext">This prototype uses a simple local demo gate, not secure authentication. Demo PIN: <b>2468</b>. Change this before sharing the prototype; a real public platform needs server-side admin accounts.</p><div class="row"><input id="adminPin" type="password" placeholder="Enter demo PIN" style="padding:10px;border:1px solid #cbd5df;border-radius:8px;max-width:220px"><button class="btn" id="adminUnlock">Unlock</button></div></div>
+  <div id="adminTools" class="hidden">
+   <div class="tabs"><button class="active" data-admin-tab="pending">Pending jobs</button><button data-admin-tab="approved">Published jobs</button><button data-admin-tab="employers">Employers</button><button data-admin-tab="applications">Applications</button></div>
+   <div id="adminContent"></div>
+   <div class="actions"><button class="btn danger small" id="resetDemo">Reset all demo data</button></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="footer">© <span id="year"></span> UG Jobs East Africa · Connecting talent to opportunity across Uganda.<br><span class="smalltext" style="color:#b9c9d5">Prototype version · Verify vacancies and employers before applying.</span></footer>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+const KEY='ugjobs_ea_v1';
+const seed={jobs:[],employers:[],applications:[]};
+let db=load(), currentJob=null, adminUnlocked=false, adminTab='pending';
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||structuredClone(seed)}catch(e){return structuredClone(seed)}}
+function save(){localStorage.setItem(KEY,JSON.stringify(db));render()}
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.remove('hidden');setTimeout(()=>t.classList.add('hidden'),3200)}
+function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));if(id==='admin'&&adminUnlocked)renderAdmin();window.scrollTo(0,0)}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.addEventListener('click',e=>{const b=e.target.closest('[data-goto]');if(b)showPage(b.dataset.goto)});
+function card(j){return `<article class="job"><div class="row"><span class="tag">${esc(j.category)}</span>${j.featured?'<span class="tag">Featured</span>':''}</div><h3>${esc(j.title)}</h3><div class="company">${esc(j.company)}</div><div class="meta"><span>📍 ${esc(j.location)}</span><span>· ${esc(j.type)}</span></div>${j.salary?`<div class="smalltext">${esc(j.salary)}</div>`:''}<p class="muted">${esc((j.description||'').slice(0,145))}${j.description?.length>145?'…':''}</p><div class="actions"><button class="btn small" data-apply="${esc(j.id)}">Apply now</button><button class="btn outline small" data-details="${esc(j.id)}">Details</button></div></article>`}
+function render(){const approved=db.jobs.filter(j=>j.status==='approved');document.getElementById('statJobs').textContent=approved.length;document.getElementById('latestJobs').innerHTML=approved.length?approved.slice().sort((a,b)=>(b.featured-a.featured)||b.created-a.created).slice(0,4).map(card).join(''):'<div class="empty" style="grid-column:1/-1">No vacancies have been published yet. Check back soon, or invite an employer to post a job.</div>';filterJobs();if(adminUnlocked)renderAdmin()}
+function filterJobs(){const kw=(document.getElementById('filterKeyword')?.value||'').toLowerCase(),loc=document.getElementById('filterLocation')?.value||'',typ=document.getElementById('filterType')?.value||'',cat=document.getElementById('filterCategory')?.value||'';const a=db.jobs.filter(j=>j.status==='approved'&&(!kw||(j.title+' '+j.company+' '+j.description).toLowerCase().includes(kw))&&(!loc||j.location.toLowerCase().includes(loc.toLowerCase()))&&(!typ||j.type===typ)&&(!cat||j.category===cat)).sort((x,y)=>(y.featured-x.featured)||y.created-x.created);document.getElementById('jobCount').textContent=a.length+' vacancies';document.getElementById('allJobs').innerHTML=a.length?a.map(card).join(''):'<div class="empty" style="grid-column:1/-1">No matching vacancies. Try changing your search filters.</div>'}
+['filterKeyword','filterLocation','filterType','filterCategory'].forEach(id=>document.getElementById(id).addEventListener('input',filterJobs));
+document.getElementById('heroSearch').addEventListener('submit',e=>{e.preventDefault();showPage('jobs');document.getElementById('filterKeyword').value=document.getElementById('heroKeyword').value;document.getElementById('filterLocation').value=document.getElementById('heroLocation').value;filterJobs()});
+document.getElementById('jobForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target),j=Object.fromEntries(f.entries());j.id=crypto.randomUUID();j.created=Date.now();j.status='pending';j.featured=false;db.jobs.push(j);save();e.target.reset();toast('Job submitted for admin review.');showPage('home')});
+document.getElementById('employerForm').addEventListener('submit',e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target).entries());f.id=crypto.randomUUID();f.created=Date.now();db.employers.push(f);save();e.target.reset();toast('Employer profile saved on this device.');});
+document.addEventListener('click',e=>{const a=e.target.closest('[data-apply]');if(a){const j=db.jobs.find(x=>x.id===a.dataset.apply);if(j){currentJob=j;showPage('apply');document.getElementById('applyTitle').textContent='Apply: '+j.title;document.getElementById('applyCompany').textContent=j.company+' · '+j.location;document.querySelector('#applyForm [name=jobId]').value=j.id}}const d=e.target.closest('[data-details]');if(d){const j=db.jobs.find(x=>x.id===d.dataset.details);if(j)alert(j.title+'\\n'+j.company+'\\n'+j.location+' · '+j.type+'\\n\\n'+j.description+'\\n\\nApply using the Apply now button.')}})
+document.getElementById('applyForm').addEventListener('submit',e=>{e.preventDefault();const form=e.target,f=new FormData(form),file=form.elements.cv.files[0];if(file&&file.size>3*1024*1024){toast('CV must be 3MB or smaller.');return}const saveApp=(cvData='')=>{db.applications.push({id:crypto.randomUUID(),jobId:f.get('jobId'),name:f.get('name'),email:f.get('email'),phone:f.get('phone'),message:f.get('message'),cvName:file?.name||'',cvData,created:Date.now()});save();form.reset();toast('Demo application saved on this device.');showPage('jobs')};if(file){const r=new FileReader();r.onload=()=>saveApp(r.result);r.readAsDataURL(file)}else saveApp()});
+document.getElementById('adminUnlock').addEventListener('click',()=>{if(document.getElementById('adminPin').value==='2468'){adminUnlocked=true;document.getElementById('adminTools').classList.remove('hidden');renderAdmin();toast('Demo admin unlocked.')}else toast('Incorrect demo PIN.')});
+document.querySelectorAll('[data-admin-tab]').forEach(b=>b.addEventListener('click',()=>{adminTab=b.dataset.adminTab;document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.toggle('active',x===b));renderAdmin()}));
+function renderAdmin(){if(!adminUnlocked)return;const root=document.getElementById('adminContent');if(adminTab==='pending'||adminTab==='approved'){const status=adminTab==='pending'?'pending':'approved',arr=db.jobs.filter(j=>j.status===status);root.innerHTML=arr.length?arr.map(j=>`<div class="job" style="margin-bottom:10px"><h3>${esc(j.title)}</h3><p class="muted">${esc(j.company)} · ${esc(j.location)} · ${esc(j.email)}</p><p>${esc(j.description)}</p><div class="actions">${status==='pending'?`<button class="btn small" data-approve="${j.id}">Approve</button>`:''}<button class="btn outline small" data-feature="${j.id}">${j.featured?'Remove feature':'Mark featured'}</button><button class="btn danger small" data-delete="${j.id}">Delete</button></div></div>`).join(''):'<div class="empty">Nothing here yet.</div>'}else if(adminTab==='employers'){root.innerHTML=db.employers.length?db.employers.map(x=>`<div class="job" style="margin-bottom:10px"><b>${esc(x.name)}</b><p class="muted">${esc(x.contact)} · ${esc(x.email)} · ${esc(x.phone)} · ${esc(x.location)}</p><p>${esc(x.about)}</p></div>`).join(''):'<div class="empty">No employer registrations yet.</div>'}else{root.innerHTML=db.applications.length?db.applications.map(a=>{const j=db.jobs.find(x=>x.id===a.jobId);return `<div class="job" style="margin-bottom:10px"><b>${esc(a.name)} — ${esc(j?.title||'Vacancy removed')}</b><p class="muted">${esc(a.email)} · ${esc(a.phone)}</p><p>${esc(a.message)}</p>${a.cvName?`<p class="smalltext">CV: ${esc(a.cvName)} <button class="btn small" data-cv="${a.id}">Download CV</button></p>`:'<span class="smalltext">No CV attached</span>'}</div>`}).join(''):'<div class="empty">No applications yet.</div>'}}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-approve],[data-delete],[data-feature],[data-cv]');if(!b)return;if(b.dataset.approve){const j=db.jobs.find(x=>x.id===b.dataset.approve);if(j)j.status='approved'}if(b.dataset.delete){if(confirm('Delete this vacancy?'))db.jobs=db.jobs.filter(x=>x.id!==b.dataset.delete)}if(b.dataset.feature){const j=db.jobs.find(x=>x.id===b.dataset.feature);if(j)j.featured=!j.featured}if(b.dataset.cv){const a=db.applications.find(x=>x.id===b.dataset.cv);if(a?.cvData){const link=document.createElement('a');link.href=a.cvData;link.download=a.cvName;link.click()}else toast('No CV file attached.')}save()});
+document.getElementById('resetDemo').addEventListener('click',()=>{if(confirm('Permanently clear all demo jobs, employers and applications from this browser?')){db=structuredClone(seed);save();toast('Demo data cleared.')}});
+document.getElementById('year').textContent=new Date().getFullYear();render();
+</script>
+</body>
+</html>
